@@ -7,42 +7,41 @@ abs = 35;
 */
 
 
-function verificaDistance (valor){
-  return valor >= 2400
+function distance (valor){
+  return valor >= 2100
 }
 
-function verificaTime (valor){
+function time (valor){
   return valor <= 720
 }
 
-function verificaPushUps (valor){
-  return valor >= 30
+function gender (valor){
+  return valor === 'male'
 }
 
-function verificaAbs (valor){
-  return valor >= 30
+function gender (valor){
+  return valor === 'female'
 }
 
-function testTAF(verificaDistance(2500), verificaTime(710), verificaPushUps(40), verificaAbs(35)){
-  passed = false;
+function pushUps (valor){
+  return valor >= 40
+}
 
+function abs (valor){
+  return valor >= 35
+}
 
-/*
 function testTAF(distance, time, gender, pushUps, abs) {
   passed = false;
 
-*/
-
-  if (gender === "male" && distance >= 2400 && time <= 720 && pushUps >= 30 && abs >= 35) {
+  if (gender === 'male' && distance (2100) && time (720) && pushUps (40) && abs (35)) {
     passed = true;
-  } else if (gender === 'female' && distance >= 2400 && time <= 840 && pushUps >= 20 && abs >= 30) {
+  } else if (gender === 'female' && distance (2100) && time (720) && pushUps (40) && abs (35)) {
     passed = true;
   }
 
   return passed;
 }
-
-
 
 console.log(
   "Candidato passou no teste?: \nresposta: ",
