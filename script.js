@@ -1,42 +1,31 @@
-/*
 distance = 25000;
 time = 710;
 gender = "male";
 pushUps = 40;
 abs = 35;
-*/
 
-
-function distance (valor){
-  return valor >= 2100
+function distance (val){
+  return val >= 2100
 }
 
-function time (valor){
-  return valor <= 720
+function time (val){
+  return val <= 720
 }
 
-function gender (valor){
-  return valor === 'male'
+function pushUps (val){
+  return val >= 40
 }
 
-function gender (valor){
-  return valor === 'female'
-}
-
-function pushUps (valor){
-  return valor >= 40
-}
-
-function abs (valor){
-  return valor >= 35
+function abs (val){
+  return val >= 35
 }
 
 function testTAF(distance, time, gender, pushUps, abs) {
   passed = false;
 
-  if (gender === 'male' && distance (2100) && time (720) && pushUps (40) && abs (35)) {
+  if (distance(val) && time(val) && gender === 'male' && pushUps(val) && abs(val)) {
     passed = true;
-  } else if (gender === 'female' && distance (2100) && time (720) && pushUps (40) && abs (35)) {
+  } else if (distance(val) && time(val) && gender === 'female' && pushUps(val) && abs(val)) {
     passed = true;
   }
 
